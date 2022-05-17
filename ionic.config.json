@@ -1,7 +1,10 @@
 {
-  "name": "Fastlane",
+  "name": "fastlane",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular",
   "id": "bc0650d2"
