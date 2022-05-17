@@ -1,0 +1,8 @@
+{
+  "name": "Fastlane",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "bc0650d2"
+}
