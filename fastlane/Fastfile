@@ -55,7 +55,7 @@ platform :android do
     build_type: 'Release',
     project_dir: 'platforms/android',
     properties: {
-      "android.injected.signing.store.file" => 'C:/Users/Daniele/Desktop/fastlane/fastlanedemo.keystore',
+      "android.injected.signing.store.file" => 'fastlanedemo.keystore',
       "android.injected.signing.store.password" => 'LynxSpa',
       "android.injected.signing.key.alias" => 'fastlanedemo',
       "android.injected.signing.key.password" => 'LynxSpa',
@@ -67,7 +67,7 @@ platform :android do
   build_type: "Release",
   project_dir: 'platforms/android',
   properties: {
-      "android.injected.signing.store.file" => 'C:/Users/Daniele/Desktop/fastlane/fastlanedemo.keystore',
+      "android.injected.signing.store.file" => 'fastlanedemo.keystore',
       "android.injected.signing.store.password" => 'LynxSpa',
       "android.injected.signing.key.alias" => 'fastlanedemo',
       "android.injected.signing.key.password" => 'LynxSpa',
