@@ -16,24 +16,11 @@
 #default_platform(:android)
 
 platform :ios do
-  desc "Build Debug"
-  lane :build_debug do
-  match(type: 'development')
-  ionic(
-    platform: 'ios',
-    prod: true,
-    release: false,
-    type: 'development'
-  )
-  end
-
-  desc "Build Release"
-  lane :build_release do
-  match(type: 'appstore')
-  ionic(
-    platform: 'ios',
-    prod: true,
-    release: true
+  lane :beta do
+    build_app(
+    scheme: "MyApp",
+    workspace: "/Users/cm/fastlane/platforms/ios/MyApp.xcworkspace",
+    include_bitcode: true
   )
   end
 end
