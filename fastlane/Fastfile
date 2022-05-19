@@ -20,7 +20,7 @@ platform :ios do
   lane :build_debug do
   match(type: 'development')
   ionic(
-    team_id: "34LRA54882"
+    team_id: "34LRA54882",
     platform: 'ios',
     prod: true,
     release: false
