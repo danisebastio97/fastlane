@@ -25,6 +25,7 @@ platform :ios do
     release: false,
     type: 'development'
   )
+match(type: "appstore")
   end
 
   desc "Build Release"
@@ -36,6 +37,11 @@ platform :ios do
     release: true
   )
   end
+lane :beta do
+  get_certificates           # invokes cert
+  get_provisioning_profile   # invokes sigh
+  build_app
+end
 end
 
 platform :android do

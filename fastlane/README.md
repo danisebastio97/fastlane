@@ -31,6 +31,14 @@ Build Debug
 
 Build Release
 
+### ios beta
+
+```sh
+[bundle exec] fastlane ios beta
+```
+
+
+
 ----
 
 
