@@ -6,8 +6,8 @@ type("development") # The default type, can be: appstore, adhoc, enterprise or d
 
 app_identifier("com.lynxspa.fastlane_demo")
 username("nicolo.brognoli@lynxspa.com") # Your Apple Developer Portal username
-match(git_basic_authorization: 'ZGFuaXNlYmFzdGlvOTc6Z2hwX1hUU1dIRk15M2wzYWdKaEVCbjV2dk1Hdmw5aU9sVDRPOFdVag==')
-match(git_private_key: '/Users/cm/.ssh/id_rsa')
+git_basic_authorization('ZGFuaXNlYmFzdGlvOTc6Z2hwX1hUU1dIRk15M2wzYWdKaEVCbjV2dk1Hdmw5aU9sVDRPOFdVag==')
+git_private_key('/Users/cm/.ssh/id_rsa')
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
