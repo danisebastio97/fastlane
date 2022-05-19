@@ -22,9 +22,8 @@ platform :ios do
   ionic(
     platform: 'ios',
     prod: true,
-    release: false,
-    type: 'development'
-  )
+    release: false
+    )
   end
 
   desc "Build Release"
@@ -35,6 +34,12 @@ platform :ios do
     prod: true,
     release: true
   )
+  end
+  
+  lane :beta do
+  get_certificates           # invokes cert
+  get_provisioning_profile   # invokes sigh
+  build_app
   end
 end
 
